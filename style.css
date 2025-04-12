@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* menu bar */
+.menu-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1vw;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding: 3vw;
+}
+
+.menu-scroller a {
+    text-decoration: none;
+    color: black;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2vw;
+}
+
+.menu-scroller a:hover {
+    text-decoration: underline;
+}
+
+.the_seed_phase,
+.the_seed_phase_parent,
+.the_experimentation_phase_parent,
+.the_experimentation_phase,
+.the_craft_phase_parent,
+.the_craft_phase,
+.the_completion_phase_parent,
+.the_completion_phase {
+    display: flex;
+    width: 21.11vw;
+    height: 21.56vh;
+    padding: 1.11vh 0.69vw 1.11vh 0.69vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.11vh;
+    flex-shrink: 0;
+    border-radius: 1.5vh;
+}
+
+.the_seed_phase_parent a,
+.the_experimentation_phase_parent a,
+.the_craft_phase_parent a,
+.the_completion_phase_parent a {
+    color: white;
+}
+
+.the_seed_phase {
+    border: 0.25vw solid #FF901A;
+}
+
+.the_seed_phase_parent {
+    background-color: #FF901A;
+}
+
+.the_experimentation_phase {
+    border: 0.25vw solid #F6BE00;
+}
+
+.the_experimentation_phase_parent {
+    background-color: #F6BE00;
+}
+
+.the_craft_phase {
+    border: 0.25vw solid #4FB3F7;
+}
+
+.the_craft_phase_parent {
+    background-color: #4FB3F7;
+}
+
+.the_completion_phase {
+    border: 0.25vw solid #6067CC;
+}
+
+.the_completion_phase_parent {
+    background-color: #6067CC;
+}
+
+/* body text */
+p {
+    padding: 3vw;
+}
+
+.about_heading {
+    padding: 3vw 20vw 3vw 20vw;
+    font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-size: 5vw;
+    color: #F0636C;
+}
+
+.about {
+    padding: 0vw 20vw 3vw 20vw;
+    font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2vw;
+    color: #F0636C;
+}
