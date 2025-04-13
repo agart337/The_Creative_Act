@@ -184,3 +184,106 @@ p {
 .completion_phase {
     color: #6067CC;
 }
+
+@media (max-width: 1025px) {
+
+    .empty,
+    .the_seed_phase,
+    .the_seed_phase_parent,
+    .the_experimentation_phase_parent,
+    .the_experimentation_phase,
+    .the_craft_phase_parent,
+    .the_craft_phase,
+    .the_completion_phase_parent,
+    .the_completion_phase,
+    .the_creative_act {
+        display: flex;
+        width: 14.65vh;
+        height: 10.98vh;
+        padding: 0.73vh 0.98vw 0.73vh 0.98vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 0.73vh;
+        font-size: 5vw;
+        flex-shrink: 0;
+    }
+
+    .menu-scroller a {
+        font-size: 2.3vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+
+    .about_heading,
+    .seed_phase_heading,
+    .experimentation_phase_heading,
+    .craft_phase_heading,
+    .completion_phase_heading {
+        font-size: 6vw;
+    }
+}
+
+
+@media (max-width: 412px) {
+
+    .empty,
+    .the_seed_phase,
+    .the_seed_phase_parent,
+    .the_experimentation_phase_parent,
+    .the_experimentation_phase,
+    .the_craft_phase_parent,
+    .the_craft_phase,
+    .the_completion_phase_parent,
+    .the_completion_phase,
+    .the_creative_act {
+        display: flex;
+        width: 60.68vw;
+        height: 16.39vh;
+        padding: 0.73vh 0.98vw 0.73vh 0.98vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 0.73vh;
+        font-size: 5vw;
+        flex-shrink: 0;
+    }
+
+    .menu-scroller a {
+        font-size: 4vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    .about_heading,
+    .seed_phase_heading,
+    .experimentation_phase_heading,
+    .craft_phase_heading,
+    .completion_phase_heading {
+        font-size: 8vw;
+    }
+
+    /* .menu-scroller {
+        position: static;
+        transform: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        padding: 5vw 3vw;
+        overflow: visible;
+    }
+
+    .menu-scroller a {
+        font-size: 4.5vw;
+    }
+
+    .empty {
+        display: none;
+    } */
+}
