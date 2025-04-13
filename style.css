@@ -4,14 +4,30 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overscroll-behavior: none;
+}
+
 /* menu bar */
 .menu-scroller {
+    position: fixed;
+    top: 50%;
+    /* center vertically */
+    left: 50%;
+    /* center horizontally */
+    transform: translate(-50%, -50%);
+    width: 100vw;
     display: grid;
     grid-auto-flow: column;
     gap: 1vw;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     padding: 3vw;
+}
+
+.menu-scroller::-webkit-scrollbar {
+    display: none;
 }
 
 .menu-scroller a {
@@ -27,6 +43,7 @@
     text-decoration: underline;
 }
 
+.empty,
 .the_seed_phase,
 .the_seed_phase_parent,
 .the_experimentation_phase_parent,
@@ -34,7 +51,8 @@
 .the_craft_phase_parent,
 .the_craft_phase,
 .the_completion_phase_parent,
-.the_completion_phase {
+.the_completion_phase,
+.the_creative_act {
     display: flex;
     width: 21.11vw;
     height: 21.56vh;
@@ -50,12 +68,14 @@
 .the_seed_phase_parent a,
 .the_experimentation_phase_parent a,
 .the_craft_phase_parent a,
-.the_completion_phase_parent a {
+.the_completion_phase_parent a,
+.the_creative_act a {
     color: white;
 }
 
 .the_seed_phase {
     border: 0.25vw solid #FF901A;
+    background-color: white;
 }
 
 .the_seed_phase_parent {
@@ -64,6 +84,7 @@
 
 .the_experimentation_phase {
     border: 0.25vw solid #F6BE00;
+    background-color: white;
 }
 
 .the_experimentation_phase_parent {
@@ -72,6 +93,7 @@
 
 .the_craft_phase {
     border: 0.25vw solid #4FB3F7;
+    background-color: white;
 }
 
 .the_craft_phase_parent {
@@ -80,33 +102,85 @@
 
 .the_completion_phase {
     border: 0.25vw solid #6067CC;
+    background-color: white;
 }
 
 .the_completion_phase_parent {
     background-color: #6067CC;
 }
 
-/* body text */
-p {
-    padding: 3vw;
+.the_creative_act {
+    background-color: #F0636C;
 }
 
-.about_heading {
+/* body text */
+p {
+    padding: 3vw 20vw 3vw 20vw;
+    font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2vw;
+}
+
+.subset {
+    padding: 0vw 20vw 0vw 20vw;
+    font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.5vw;
+}
+
+.about_heading,
+.seed_phase_heading,
+.experimentation_phase_heading,
+.craft_phase_heading,
+.completion_phase_heading {
     padding: 3vw 20vw 3vw 20vw;
     font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
     font-optical-sizing: auto;
     font-weight: 350;
     font-style: normal;
     font-size: 5vw;
+}
+
+.about_heading {
     color: #F0636C;
 }
 
 .about {
-    padding: 0vw 20vw 3vw 20vw;
-    font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 2vw;
     color: #F0636C;
+}
+
+.seed_phase_heading {
+    color: #FF901A;
+}
+
+.seed_phase {
+    color: #FF901A;
+}
+
+.experimentation_phase_heading {
+    color: #F6BE00;
+}
+
+.experimentation_phase {
+    color: #F6BE00;
+}
+
+.craft_phase_heading {
+    color: #4FB3F7;
+}
+
+.craft_phase {
+    color: #4FB3F7;
+}
+
+.completion_phase_heading {
+    color: #6067CC;
+}
+
+.completion_phase {
+    color: #6067CC;
 }
