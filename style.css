@@ -37,13 +37,14 @@ body {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 550;
     font-style: normal;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
 }
 
 .menu-scroller a:hover {
     text-decoration: underline;
+    text-decoration-thickness: 0.05em;
 }
 
 .empty,
@@ -118,19 +119,19 @@ body {
 
 /* body text */
 p {
-    padding: 3vw 20vw 3vw 20vw;
+    padding: 3vw 25vw 3vw 25vw;
     font-family: Helvetica, sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 .subset {
-    padding: 0vw 20vw 0vw 20vw;
+    padding: 0vw 25vw 0vw 25vw;
     font-family: Helvetica, sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 700;
     font-style: normal;
     font-size: 2vw;
 }
@@ -140,10 +141,10 @@ p {
 .experimentation_phase_heading,
 .craft_phase_heading,
 .completion_phase_heading {
-    padding: 3vw 20vw 3vw 20vw;
+    padding: 3vw 25vw 3vw 25vw;
     font-family: Helvetica, sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 320;
     font-style: normal;
     font-size: 5vw;
 }
